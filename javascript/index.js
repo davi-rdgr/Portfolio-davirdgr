@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         autoStart: true,
         delay: 10,
         loop: false,
-        deleteSpeed: 100,
+
     });
 });
