@@ -2,11 +2,14 @@
 
 :root {
     --rosa: #F279AA;
+    --rosaFraco: #361824;
+
     --roxo: #9C93EC;
     --verde: #50ED57;
     --amarelo: #F1FA8C;
     --branco: #FFFFFF;
     --marrom: #9C5233;
+    --cinza: #6C6A6A;
 
     --backescuro: #101013;
     --backclaro: #191A21;
@@ -25,7 +28,6 @@
 
 .section_intro {
     background-color: var(--backescuro);
-    height: 100px;
 }
 
 .header_intro {
@@ -56,8 +58,21 @@
 /* INTRODUÇÃO */
 
 .main-intro {
-    background-color: var(--backclaro);
-    height: 90vh;
+    /* background-color: var(--backclaro); */
+    background: linear-gradient(var(--backclaro), var(--backescuro));
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    line-height: 50px;
+    font-size: 30px;
+    color: var(--branco);
+}
+
+.div_h1 {
+    font-size: 0px;
 }
 
 .section-main {
@@ -66,8 +81,14 @@
     align-items: center;
 }
 
+.typewriter {
+    color: var(--branco);
+    font-size: 20px;
+}
+
 /* posicionando e estilizando as string do objeto */
 .ap_p {
+    width: 955px;
     font-size: 30px;
     line-height: 52px;
     color: var(--branco);
@@ -96,4 +117,84 @@
 
 .ap-key {
     color: var(--marrom);
+}
+
+/* SOBRE MIM: */
+
+
+.about_me {
+    /* background: linear-gradient(var(--backescuro) 90%, var(--rosaFraco)); */
+    background: linear-gradient(var(--backescuro), var(--backclaro) 80%, var(--rosaFraco));
+}
+
+.about_me h2,
+.my_skills h2 {
+    font-size: 30px;
+    color: var(--branco);
+    text-align: center;
+    padding: 50px;
+}
+
+.div_about_fa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div_about_me {
+    width: 700px;
+    font-size: 28px;
+}
+
+.div_about_me p {
+    margin-top: 20px;
+    color: var(--branco);
+    word-spacing: 10px;
+}
+
+.div_firstcode p {
+    text-align: center;
+    color: var(--cinza);
+}
+
+/* HABILIDADES */
+
+.my_skills {
+    /* background: linear-gradient(var(--backescuro) 90%, var(--rosaFraco)); */
+    background: linear-gradient(var(--rosaFraco), var(--backclaro) 10%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.article_skills {
+    display: flex;
+    /* background-color: #4b5079; */
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.div_image {
+    width: 450px;
+    text-align: center;
+}
+
+.article_description_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.article_description_name h3 {
+    font-size: 36px;
+    color: var(--branco);
+}
+
+.article_description_name p {
+    color: var(--branco);
+    font-size: 26px;
+    max-width: 1200px;
 }
