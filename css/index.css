@@ -3,7 +3,6 @@
 :root {
     --rosa: #F279AA;
     --rosaFraco: #361824;
-
     --roxo: #9C93EC;
     --verde: #50ED57;
     --amarelo: #F1FA8C;
@@ -35,7 +34,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    background-color: var(--backescuro);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    opacity: .9;
 }
 
 .header-p {
@@ -51,6 +54,10 @@
     font-size: 20px;
 }
 
+a {
+    color: inherit;
+}
+
 .header-li li {
     margin: 20px;
 }
@@ -58,8 +65,8 @@
 /* INTRODUÇÃO */
 
 .main-intro {
-    /* background-color: var(--backclaro); */
-    background: linear-gradient(var(--backclaro), var(--backescuro));
+    background: linear-gradient(var(--backclaro), var(--backescuro)90%);
+    padding-top: 70px;
 
 }
 
@@ -73,6 +80,27 @@ h1 {
 
 .div_h1 {
     font-size: 0px;
+}
+
+.div-image {
+    position: relative;
+}
+
+.image_svg_right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    right: 0;
+    top: 33%;
+    position: absolute;
+}
+
+.image_svg_bottom {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: 85%;
+    right: 35%;
 }
 
 .section-main {
@@ -123,8 +151,7 @@ h1 {
 
 
 .about_me {
-    /* background: linear-gradient(var(--backescuro) 90%, var(--rosaFraco)); */
-    background: linear-gradient(var(--backescuro), var(--backclaro) 80%, var(--rosaFraco));
+    background: linear-gradient(var(--backescuro), var(--rosaFraco), var(--backclaro));
 }
 
 .about_me h2,
@@ -161,8 +188,7 @@ h1 {
 /* HABILIDADES */
 
 .my_skills {
-    /* background: linear-gradient(var(--backescuro) 90%, var(--rosaFraco)); */
-    background: linear-gradient(var(--rosaFraco), var(--backclaro) 10%);
+    background-color: var(--backclaro);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -197,4 +223,16 @@ h1 {
     color: var(--branco);
     font-size: 26px;
     max-width: 1200px;
+}
+
+
+/* EM APRENDIZADO: */
+
+.article_coming {}
+
+.div_comming {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 }
