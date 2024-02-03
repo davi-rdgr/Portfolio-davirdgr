@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     new Typewriter(typewriterh1, {
-        strings: ['<h1>&lt;<span style="color: var(--rosa);">h1</span>&gt;<span style="color: var(--rosa);">Hello, my name is </span><span style="color: var(--amarelo);">Davi Rodeghiero.</span> <br> <span style="color: var(--rosa)">I am a</span><span style="color: var(--verde);"> brazilian </span><span style="color: var(--rosa);">Front-end Developer !</span>&lt;<span style="color: var(--rosa);">h1</span>&gt;</h1>'],
+        strings: ['<h1>&lt;<span style="color: var(--rosa);">h1</span>&gt;<span style="color: var(--rosa);"> Hello, my name is </span><span style="color: var(--amarelo);">Davi Rodeghiero.</span> <br> <span style="color: var(--rosa)">I am a</span><span style="color: var(--verde);"> brazilian </span><span style="color: var(--rosa);">Front-end Developer! </span>&lt;<span style="color: var(--rosa);">h1</span>&gt;</h1>'],
         autoStart: true,
         delay: 15,
         loop: true,

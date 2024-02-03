@@ -58,8 +58,7 @@
 /* INTRODUÇÃO */
 
 .main-intro {
-    /* background-color: var(--backclaro); */
-    background: linear-gradient(var(--backclaro), var(--backescuro));
+    background: linear-gradient(var(--backclaro), var(--backescuro)90%);
 
 }
 
@@ -123,8 +122,7 @@ h1 {
 
 
 .about_me {
-    /* background: linear-gradient(var(--backescuro) 90%, var(--rosaFraco)); */
-    background: linear-gradient(var(--backescuro), var(--backclaro) 80%, var(--rosaFraco));
+    background: linear-gradient(var(--backescuro), var(--rosaFraco), var(--backclaro));
 }
 
 .about_me h2,
@@ -161,8 +159,7 @@ h1 {
 /* HABILIDADES */
 
 .my_skills {
-    /* background: linear-gradient(var(--backescuro) 90%, var(--rosaFraco)); */
-    background: linear-gradient(var(--rosaFraco), var(--backclaro) 10%);
+    background-color: var(--backclaro);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -198,3 +195,16 @@ h1 {
     font-size: 26px;
     max-width: 1200px;
 }
+
+
+/* EM APRENDIZADO: */
+
+.article_coming {}
+
+.div_comming {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
