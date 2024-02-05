@@ -7,6 +7,7 @@
     <title>Portifolio - Davi Rodeghiero Souza</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -15,12 +16,31 @@
             <p class="header-p">Meu Portifolio</p>
             <nav>
                 <ul class="header-li">
-                    <li class="li"></li>
-                    <li class="li"></li>
-                    <li class="li"></li>
-                    <li class="li"></li>
-                    <li class="li"></li>
-                    <li class="li"></li>
+                    <div class="overflow">
+                        <li class="li"></li>
+                        <div class="margin_li"></div>
+                    </div>
+                    <div class="overflow">
+                        <li class="li"></li>
+                        <div class="margin_li"></div>
+                    </div>
+                    <div class="overflow">
+                        <li class="li"></li>
+                        <div class="margin_li"></div>
+                    </div>
+                    <div class="overflow">
+                        <li class="li"></li>
+                        <div class="margin_li"></div>
+                    </div>
+                    <div class="overflow">
+                        <li class="li"></li>
+                        <div class="margin_li"></div>
+                    </div>
+                    <div class="overflow">
+                        <li class="li"></li>
+                        <div class="margin_li"></div>
+                    </div>
+
                 </ul>
             </nav>
         </header>
@@ -32,7 +52,7 @@
                     <div class="typewriter"></div>
                 </div>
                 <div class="div-image">
-                    <img src="assets/images/minhafoto.png" alt="">
+                    <img class="image_myself" src="assets/images/minhafoto.png" alt="">
                     <div class="image_svg_right">
                         <img src="assets/svg/Home.svg" alt="">
                         <img src="assets/svg/Stats.svg" alt="">
@@ -50,11 +70,11 @@
     </section>
 
     <section id="ID_about_me" class="about_me">
-        <h2>&lt;<span style="color: var(--rosa);">h2</span>&gt; Sobre mim &lt;/<span
+        <h2 class="sections_h2">&lt;<span style="color: var(--rosa);">h2</span>&gt; Sobre mim &lt;/<span
                 style="color: var(--rosa);">h2</span>&gt;</h2>
         <div class="div_about_fa">
             <div class="div_about_me">
-                <p>&lt;<span style="color: var(--rosa);">p</span>&gt; Me chamo Davi Rodeghiero Souza, tive meu primeiro
+                <!--                 <p>&lt;<span style="color: var(--rosa);">p</span>&gt; Me chamo Davi Rodeghiero Souza, tive meu primeiro
                     contato com a programação em 2018 com um
                     curso de
                     Algoritmo usando a ferramenta Studio Portugol. &lt;/<span style="color: var(--rosa);">p</span>&gt;
@@ -63,7 +83,7 @@
                 <p>&lt;<span style="color: var(--rosa);">p</span>&gt; Carrego alguns certificados de conclusão e
                     atualmente estou cursando Análise e
                     Desenvolvimento de
-                    Sistemas. &lt;/<span style="color: var(--rosa);">p</span>&gt;</p>
+                    Sistemas. &lt;/<span style="color: var(--rosa);">p</span>&gt;</p> -->
             </div>
             <div class="div_firstcode">
                 <img src="assets/images/firstcode.png" alt="registro do meu primeiro código">
@@ -73,7 +93,7 @@
     </section>
 
     <section id="ID_my_skills" class="my_skills">
-        <h2>&lt;<span style="color: var(--rosa);">h2</span>&gt; Habilidades &lt;/<span
+        <h2 class="sections_h2">&lt;<span style="color: var(--rosa);">h2</span>&gt; Habilidades &lt;/<span
                 style="color: var(--rosa);">h2</span>&gt;</h2>
 
         <article class="article_skills">
@@ -162,7 +182,7 @@
         </article>
 
         <article class="article_coming">
-            <h2> &lt;<span style="color: var(--rosa);">h2</span>&gt; Em aprendizado &lt;/<span
+            <h2 class="sections_h2"> &lt;<span style="color: var(--rosa);">h2</span>&gt; Em aprendizado &lt;/<span
                     style="color: var(--rosa);">h2</span>&gt;</h2>
             <div class="div_comming">
                 <img src="assets/svg abilities/Typescript.svg" alt="ícone do Typescript">
@@ -171,6 +191,97 @@
                 <img src="assets/svg abilities/MongoDB.svg" alt="ícone do MongoDB">
             </div>
         </article>
+    </section>
+
+    <section class="ID_section_projects">
+        <h2 class="sections_h2"> &lt;<span style="color: var(--rosa);">h2</span>&gt; Meus Projetos &lt;/<span
+                style="color: var(--rosa);">h2</span>&gt;</h2>
+        <section class="project_div">
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/PokeExplorer.png" alt="">
+                    <h4>Poke Explorer</h4>
+                    <p>O Poke Explorer usa a API do PokeAPI para exibir de forma dinâmica várias informações sobre os
+                        mais de 1000 Pokémons de todas regiões! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/HorarioAdaptativo.png" alt="">
+                    <h4>Relógio Adaptativo</h4>
+                    <p>O Relógio Adaptativo usa de funções Javascript para exibir informações sobre data, horário e
+                        estado do dia em tempo real de forma interativa!</p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/Petshop.png" alt="">
+                    <h4>Pet Shop</h4>
+                    <p>O projeto Petshop faz parte de um trabalho proposto pela faculdade, que nos desafiava elaborar
+                        desde protótipos de baixa qualidade até o desenvolvimento de todas telas! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/MeuPortifolio.png" alt="">
+                    <h4>Meu portifólio</h4>
+                    <p>Que não deixa de ser um projeto :) é onde estou guardando e apresentando e atualizando alguns dos
+                        meus trabalhos! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/Aprenser.png" alt="">
+                    <h4>Aprenser</h4>
+                    <p>Aprenser, que não é Aprender, foi um projeto proposto por um dos cursos de Web Design que tenho
+                        de bagagem. Simula a interface de uma escola de cursos, cujo tomei liberdade de tornar
+                        responsivo! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/Fashion.png" alt="">
+                    <h4>Fashion</h4>
+                    <p>Fashion também é um projeto de um dos cursos de Web Design, que simula a interface de uma loja de
+                        roupas, com modelos e mais. Tomei a liberdade de adicionar um botão para Dark Mode! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/Hotels.png" alt="">
+                    <h4>Range Hotels</h4>
+                    <p>Range Hotels é mais um projeto do curso de Web Design, responsivo e que simula uma interface
+                        principal de uma página de agendamento para airbNb e hoteis! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/Calculadora.png" alt="">
+                    <h4>Calculadora</h4>
+                    <p>A Calculadora, como o próprio nome já explica, foi minha primeira tentativa de criar uma
+                        calculadora interativa! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+            <div class="project_div_all">
+                <div class="project_content">
+                    <img src="assets/images_project/Precipitação.png" alt="">
+                    <h4>Precipitação Atmosférica</h4>
+                    <p>O Projeto de Precipitação Atmosférica foi desenvolvido como proposta da faculdade, para que
+                        usássemos um arquivo .csv com milhares de dados para apresentar dados de precipitação, chuva,
+                        temperatura, moda e média de anos de registros! </p>
+                </div>
+                <div class="project_card_shadow"></div>
+            </div>
+        </section>
+        s
     </section>
 
     <script src="javascript/index.js"></script>
