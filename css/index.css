@@ -303,12 +303,42 @@ h1 {
     background-color: var(--backclaro);
     filter: drop-shadow(0px 0px 4px var(--roxo));
     overflow: hidden;
-    cursor: pointer;
 }
 
 .project_content {
     width: 450px;
 }
+
+
+.project_card_p_t {
+    font-size: 35px;
+    color: var(--branco);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.project_card_shadow_articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project_card_p,
+.project_card_p_2 {
+    font-size: 22px;
+    color: var(--verde);
+    transition: all .3s ease;
+
+}
+
+.project_card_p:hover,
+.project_card_p_2:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px var(--verde));
+}
+/* svg {
+    stroke: red;
+} */
 
 .project_content h4 {
     font-size: 25px;
@@ -323,13 +353,31 @@ h1 {
 }
 
 .project_card_shadow {
-    background-color: rgba(25, 26, 33, .8);
+    background-color: rgba(25, 26, 33, .9);
     width: 100%;
     height: 100%;
     position: absolute;
     transform: translateY(100%);
     transition: all .2s ease;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_content_svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    gap: 15px;
+}
+
+.project_border {
+    height: 1px;
+    width: 100%;
+    background-color: white;
 }
 
 .project_div_all:hover .project_card_shadow {

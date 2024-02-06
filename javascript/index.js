@@ -4,6 +4,9 @@ const typewriter = document.querySelector('.typewriter')
 const typewriterh1 = document.querySelector('.div_h1')
 const typewriterli = document.querySelectorAll('.li')
 const typewriterp = document.querySelector('.div_about_me')
+
+const project_card_p = document.querySelector('.project_card_p')
+
 const list = ['<a href="#ID_section_intro">Inicio</a>', '<a href="#ID_about_me">Sobre mim</a>', '<a href="#ID_my_skills">Habilidades</a>', '<a href="#ID_section_projects">Projetos</a>', '<a href="#ID_section_cert">Certificados</a>', '<a href="#ID_section_contact">Contato</a>']
 console.log(typewriterli, list)
 
@@ -45,3 +48,31 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // SCROLL REVEAL:
+
+const typeSeeMore = document.querySelector('.project_card_p_t')
+const typeSeeRep = document.querySelector('.project_card_p')
+const typeSeeApli = document.querySelector('.project_card_p_2')
+
+function func() {
+    new Typewriter(typeSeeMore, {
+        strings: ['Quer ver mais?'],
+        autoStart: true,
+        delay: 30,
+        loop: true,
+        deleteSpeed: 1000000000000,
+    });
+    new Typewriter(typeSeeRep, {
+        strings: ['Ver respositório'],
+        autoStart: true,
+        delay: 30,
+        loop: true,
+        deleteSpeed: 1000000000000,
+    });
+    new Typewriter(typeSeeApli, {
+        strings: ['Ver aplicação no ar'],
+        autoStart: true,
+        delay: 30,
+        loop: true,
+        deleteSpeed: 1000000000000,
+    });
+}
