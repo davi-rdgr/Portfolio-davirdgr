@@ -8,7 +8,6 @@ const typewriterp = document.querySelector('.div_about_me')
 const project_card_p = document.querySelector('.project_card_p')
 
 const list = ['<a href="#ID_section_intro">Inicio</a>', '<a href="#ID_about_me">Sobre mim</a>', '<a href="#ID_my_skills">Habilidades</a>', '<a href="#ID_section_projects">Projetos</a>', '<a href="#ID_section_cert">Certificados</a>', '<a href="#ID_section_contact">Contato</a>']
-console.log(typewriterli, list)
 
 document.addEventListener('DOMContentLoaded', function () {
     // apresentação
@@ -49,30 +48,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // SCROLL REVEAL:
 
-const typeSeeMore = document.querySelector('.project_card_p_t')
-const typeSeeRep = document.querySelector('.project_card_p')
-const typeSeeApli = document.querySelector('.project_card_p_2')
+const typeSeeMore = document.querySelectorAll('.project_card_p_t')
+const typeSeeRep = document.querySelectorAll('.project_card_p')
+const typeSeeApli = document.querySelectorAll('.project_card_p_2')
 
-function func() {
-    new Typewriter(typeSeeMore, {
-        strings: ['Quer ver mais?'],
-        autoStart: true,
-        delay: 30,
-        loop: true,
-        deleteSpeed: 1000000000000,
-    });
-    new Typewriter(typeSeeRep, {
-        strings: ['Ver respositório'],
-        autoStart: true,
-        delay: 30,
-        loop: true,
-        deleteSpeed: 1000000000000,
-    });
-    new Typewriter(typeSeeApli, {
-        strings: ['Ver aplicação no ar'],
-        autoStart: true,
-        delay: 30,
-        loop: true,
-        deleteSpeed: 1000000000000,
-    });
+console.log(typeSeeMore)
+
+function loadTypewriter() {
+
+    for (let i = 0; i < typeSeeMore.length; i++) {
+        new Typewriter(typeSeeMore[i], {
+            strings: ['Quer ver mais?'],
+            autoStart: true,
+            delay: 30,
+            loop: true,
+            deleteSpeed: 1000000000000,
+        });
+    }
+
+    for (let i = 0; i < typeSeeRep.length; i++) {
+        new Typewriter(typeSeeRep[i], {
+            strings: ['Ver respositório'],
+            autoStart: true,
+            delay: 30,
+            loop: true,
+            deleteSpeed: 1000000000000,
+        })
+    }
+
+    for (let i = 0; i < typeSeeApli.length; i++) {
+        new Typewriter(typeSeeApli[i], {
+            strings: ['Ver aplicação no ar'],
+            autoStart: true,
+            delay: 30,
+            loop: true,
+            deleteSpeed: 1000000000000,
+        })
+    }
 }

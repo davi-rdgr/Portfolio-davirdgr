@@ -264,7 +264,9 @@ h1 {
 
 /* EM APRENDIZADO: */
 
-
+.article_coming {
+    margin-bottom: 50px;
+}
 .div_comming {
     display: flex;
     flex-direction: row;
@@ -336,9 +338,6 @@ h1 {
     cursor: pointer;
     filter: drop-shadow(0px 0px 4px var(--verde));
 }
-/* svg {
-    stroke: red;
-} */
 
 .project_content h4 {
     font-size: 25px;
