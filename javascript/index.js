@@ -86,3 +86,18 @@ function loadTypewriter() {
         })
     }
 }
+
+// BOTÃO VER MAIS:
+let project_div = document.querySelector('.project_div')
+let buttonSeeMore = document.querySelector('.buttonSeeMore');
+
+function OpenSee() {
+    if (project_div.style.height !== 'initial') {
+        project_div.style.height = 'initial'
+        buttonSeeMore.textContent = 'Ver menos!'
+    }
+    else {
+        project_div.style.height = '400px'
+        buttonSeeMore.textContent = 'Ver mais!'
+    }
+}

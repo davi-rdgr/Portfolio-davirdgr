@@ -278,6 +278,7 @@ h1 {
 
 .ID_section_projects {
     background-color: var(--backescuro);
+    text-align: center;
 }
 
 
@@ -287,6 +288,9 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    height: 400px;
+    overflow: hidden;
+    transition: all 2s ease;
 }
 
 .project_div_all img {
@@ -309,6 +313,7 @@ h1 {
 
 .project_content {
     width: 450px;
+    text-align: left;
 }
 
 
@@ -381,4 +386,21 @@ h1 {
 
 .project_div_all:hover .project_card_shadow {
     transform: translateY(0%);
+}
+
+.buttonSeeMore {
+    font-size: 16px;
+    padding: 5px;
+    color: var(--verde);
+    background-color: transparent;
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.buttonSeeMore:hover {
+    filter: drop-shadow(0px 0px 5px var(--verde));    
+
 }
