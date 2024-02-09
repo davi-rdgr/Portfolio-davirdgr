@@ -421,12 +421,12 @@ h1 {
 /* MEUS CERTIFICADOS */
 
 .section_certificates {
-    background-color: var(--backclaro);
+    background-color: var(--backescuro);
 }
 
 .certificates_div {
     width: 60%;
-    gap: 20px;
+    gap: 25px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -435,9 +435,12 @@ h1 {
 }
 
 .article_certificades {
-    border: 1px solid var(--amarelo);
+    filter: drop-shadow(0px 0px 4px var(--roxo));
+    background-color: var(--backclaro);
+    border: 2px solid var(--roxo);
     padding: 10px;
     width: 330px;
+    border-radius: 5px;
 }
 
 .article_certificades div:nth-child(1) {
@@ -450,17 +453,25 @@ h1 {
 }
 
 .article_div_p p {
-    color: var(--verde);
+    color: var(--roxo);
     margin-top: 3px;
 }
 
 .article_span {
     color: var(--branco);
-
+}
+.article_att {
+    font-size: 10px;
 }
 
 .article_certif {
     color: var(--amarelo);
     text-align: center;
-    padding: 5px;
+    padding: 6px 3px 3px 3px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.article_certif:hover {
+    color: var(--rosa);
 }
