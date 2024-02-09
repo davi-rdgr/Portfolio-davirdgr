@@ -201,10 +201,10 @@ h1 {
 }
 
 .sections_h2 {
-    font-size: 30px;
+    font-size: 35px;
     color: var(--branco);
     text-align: center;
-    padding: 50px;
+    padding: 80px 50px 50px 50px;
 }
 
 .div_about_fa {
@@ -251,6 +251,9 @@ h1 {
 .div_image {
     width: 450px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .article_description_name {
@@ -261,13 +264,13 @@ h1 {
 }
 
 .article_description_name h3 {
-    font-size: 36px;
+    font-size: 32px;
     color: var(--branco);
 }
 
 .article_description_name p {
     color: var(--branco);
-    font-size: 26px;
+    font-size: 22px;
     max-width: 1200px;
 }
 
