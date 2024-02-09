@@ -237,7 +237,7 @@ h1 {
     background-color: var(--backclaro);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 15px;
 }
 
 .article_skills {
@@ -249,7 +249,7 @@ h1 {
 }
 
 .div_image {
-    width: 450px;
+    width: 390px;
     text-align: center;
     display: flex;
     justify-content: center;
