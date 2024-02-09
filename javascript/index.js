@@ -7,7 +7,7 @@ const typewriterp = document.querySelector('.div_about_me')
 
 const project_card_p = document.querySelector('.project_card_p')
 
-const list = ['<a href="#ID_section_intro">Inicio</a>', '<a href="#ID_about_me">Sobre mim</a>', '<a href="#ID_my_skills">Habilidades</a>', '<a href="#ID_section_projects">Projetos</a>', '<a href="#ID_section_cert">Certificados</a>', '<a href="#ID_section_contact">Contato</a>']
+const list = ['<a href="#ID_section_intro">Inicio</a>', '<a href="#ID_about_me">Sobre mim</a>', '<a href="#ID_my_skills">Habilidades</a>', '<a href="#ID_section_projects">Projetos</a>', '<a href="#ID_section_certificates">Certificados</a>', '<a href="#ID_section_contact">Contato</a>']
 
 document.addEventListener('DOMContentLoaded', function () {
     // apresentação
