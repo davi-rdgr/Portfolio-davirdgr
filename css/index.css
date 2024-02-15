@@ -507,13 +507,14 @@ h1 {
     color: var(--amarelo);
     font-size: 18px;
 }
+
 .mail_span_forsvg {
     position: relative;
 }
-.mail_span_forsvg::after {
-    content: url('/assets/svg/mail_miniicon.svg');
+
+.mail_svg {
     position: absolute;
-    margin: 1px 0px 0px 5px;
+    margin: 2px 0px 0px 5px;
 }
 
 .mail_contact {
@@ -569,6 +570,11 @@ textarea {
     position: absolute;
     bottom: 0;
     cursor: pointer;
+    transition: all ease .3s;
+}
+
+#submit:hover {
+    color: var(--verde);
 }
 
 .main_social {
@@ -581,11 +587,23 @@ textarea {
 
 .social_container {
     gap: 30px;
-    flex-wrap: wrap;
     display: flex;
+    flex-direction: column;
 }
 
-.apapa {
+.links_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--roxo);
+    transition: all .2s ease;
+}
+
+.links_div:hover {
+    color: var(--amarelo);
+}
+
+.createdBy_p {
     text-align: center;
     padding: 5px;
     color: var(--cinza);
