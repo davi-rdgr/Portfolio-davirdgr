@@ -99,5 +99,3 @@ function OpenSee() {
         buttonSeeMore.textContent = 'Ver mais!'
     }
 }
-
-
