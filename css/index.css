@@ -237,7 +237,7 @@ h1 {
     background-color: var(--backclaro);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 15px;
 }
 
 .article_skills {
@@ -249,7 +249,7 @@ h1 {
 }
 
 .div_image {
-    width: 450px;
+    width: 390px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -463,6 +463,7 @@ h1 {
 .article_span {
     color: var(--branco);
 }
+
 .article_att {
     font-size: 10px;
 }
@@ -477,4 +478,115 @@ h1 {
 
 .article_certif:hover {
     color: var(--rosa);
+}
+
+/* ENTRE EM CONTATO */
+
+.section_contact {
+    background-color: var(--backescuro);
+}
+
+.section_mail {
+    width: min-content;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.mail_form {
+    display: flex;
+    gap: 40px;
+}
+
+.mail_content_span {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mail_span {
+    color: var(--amarelo);
+    font-size: 18px;
+}
+.mail_span_forsvg {
+    position: relative;
+}
+.mail_span_forsvg::after {
+    content: url('/assets/svg/mail_miniicon.svg');
+    position: absolute;
+    margin: 1px 0px 0px 5px;
+}
+
+.mail_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.mail_contact input,
+#submit,
+textarea {
+    width: 400px;
+    background-color: transparent;
+    border: 1px solid var(--roxo);
+}
+
+.mail_contact input::placeholder,
+#submit {
+    color: var(--branco);
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+#name,
+#email,
+#subject {
+    width: 574px;
+    height: 51px;
+    color: var(--branco);
+    padding: 5px;
+    font-size: 16px;
+}
+
+#message {
+    width: 574px;
+    height: 287px;
+    color: var(--branco);
+    padding: 5px;
+}
+
+#submit {
+    height: 51px;
+    width: 287px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.main_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 287px;
+}
+
+.social_container {
+    gap: 30px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.apapa {
+    text-align: center;
+    padding: 5px;
+    color: var(--cinza);
 }
