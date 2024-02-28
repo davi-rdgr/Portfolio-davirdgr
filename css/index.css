@@ -197,7 +197,7 @@ h1 {
 
 
 .about_me {
-    background: linear-gradient(var(--backescuro), var(--rosaFraco), var(--backclaro));
+    background: linear-gradient(var(--backescuro), var(--rosaFraco) 50%, var(--backclaro));
 }
 
 .sections_h2 {
@@ -278,7 +278,7 @@ h1 {
 /* EM APRENDIZADO: */
 
 .article_coming {
-    margin-bottom: 50px;
+    background: linear-gradient(var(--backclaro), var(--backescuro));
 }
 
 .div_comming {
@@ -291,7 +291,7 @@ h1 {
 /* MEUS PROJETOS */
 
 .ID_section_projects {
-    background-color: var(--backescuro);
+    background: linear-gradient(var(--backescuro), var(--rosaFraco) 50%, var(--backclaro));
     text-align: center;
 }
 
@@ -424,7 +424,7 @@ h1 {
 /* MEUS CERTIFICADOS */
 
 .section_certificates {
-    background-color: var(--backescuro);
+    background: linear-gradient(var(--backclaro), var(--backescuro));
 }
 
 .certificates_div {
